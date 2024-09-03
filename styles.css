@@ -89,7 +89,7 @@ nav ul li a {
     height: 100%;
     background: url('images/sec1-bg4.jpg') no-repeat center center/cover;
     opacity: 0.7;
-    z-index: -1; /* 배경을 텍스트 뒤로 보내기 위해 z-index를 사용합니다 */
+    z-index: -1;
 }
 
 
@@ -263,6 +263,7 @@ section {
 #project-intro  {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 #carosel-intro  {
     width: 30%;
@@ -293,6 +294,32 @@ section {
 }
 .carousel-control-prev, .carousel-control-next  {
     color: black;
+}
+
+@media (max-width: 768px) {
+    #project-intro {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    #carosel-intro, #carouselExampleControls {
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+
+    .carosel-intro-2 {
+        flex-direction: column;
+    }
+
+    .carosel-intro-3,
+    .carosel-intro-4 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .carosel-intro-4 a {
+        text-decoration: none;
+    }
 }
 
 footer {
