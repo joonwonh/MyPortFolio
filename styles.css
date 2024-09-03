@@ -193,7 +193,14 @@ section {
     width: 130px;
     height: 130px;
 }
-
+#javaImg, #mysqlImg    {
+    width: 170px;
+    height: 100px;
+}
+#figmaImg, #notionImg   {
+    width: 170px;
+    height: 60px;
+}
 
 .card-body {
     padding: 10px;
